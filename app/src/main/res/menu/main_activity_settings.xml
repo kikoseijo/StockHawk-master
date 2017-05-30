@@ -8,7 +8,7 @@
         android:orderInCategory="99"
         android:title="@string/action_change_units"
         app:showAsAction="always"
-        android:contentDescription="Change shown values dollars or percent"
+        android:contentDescription="@string/change_shown_values_dollars_or_percent"
         />
 
 </menu>

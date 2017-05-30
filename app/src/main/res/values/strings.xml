@@ -38,5 +38,6 @@
     <string name="widget_nosymbol" translatable="true">no symbol</string>
     <string name="widget_noprice" translatable="true">no price</string>
     <string name="widget_nochangedata" translatable="true">no change data</string>
+    <string name="change_shown_values_dollars_or_percent">Change shown values dollars or percent</string>
 
 </resources>

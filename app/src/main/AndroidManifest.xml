@@ -56,7 +56,7 @@
         </receiver>
 
 
-        <activity android:name=".ui.HistoryActivity"></activity>
+        <activity android:name=".ui.HistoryActivity" />
     </application>
 
 </manifest>

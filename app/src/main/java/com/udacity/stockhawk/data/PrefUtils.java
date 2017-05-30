@@ -6,7 +6,6 @@ import android.preference.PreferenceManager;
 
 import com.udacity.stockhawk.R;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -21,7 +20,7 @@ public final class PrefUtils {
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
 
-        boolean initialized = prefs.getBoolean(initializedKey, false);
+        @SuppressWarnings("UnusedAssignment") boolean initialized = prefs.getBoolean(initializedKey, false);
 
 
         Set<String> tempss = prefs.getStringSet(stocksKey, new HashSet<String>());

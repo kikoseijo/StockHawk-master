@@ -23,8 +23,6 @@ import java.util.Locale;
 
 public class HistoryActivity extends AppCompatActivity {
 
-    private LineChart historyChart;
-    private TextView textViewSymbol;
     private String symbolToShow = "---";
 
     @Override
@@ -32,8 +30,8 @@ public class HistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
-        historyChart = (LineChart) findViewById(R.id.historyLineChart);
-        textViewSymbol = (TextView)findViewById(R.id.textViewSymbol);
+        LineChart historyChart = (LineChart) findViewById(R.id.historyLineChart);
+        TextView textViewSymbol = (TextView) findViewById(R.id.textViewSymbol);
 
         if (getIntent().hasExtra("symbol"))
         {
@@ -47,7 +45,7 @@ public class HistoryActivity extends AppCompatActivity {
 
         textViewSymbol.setText(symbolToShow);
 
-        List<Entry> entries = new ArrayList<Entry>();
+        List<Entry> entries = new ArrayList<>();
         final List<Long> xAxisValues = new ArrayList<>();
         int xAxisPosition = 0;
 
@@ -55,6 +53,7 @@ public class HistoryActivity extends AppCompatActivity {
         String[] selectionArgs = {symbolToShow};
         Cursor c = getContentResolver().query(Contract.Quote.URI, null, selection, selectionArgs, null);
 
+        assert c != null;
         c.moveToFirst();
         String history = c.getString(Contract.Quote.POSITION_HISTORY);
         c.close();
