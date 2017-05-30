@@ -72,9 +72,9 @@ public final class QuoteSyncJob {
                 String symbol = iterator.next();
 
                 Stock stock = quotes.get(symbol);
-                StockQuote quote = stock.getQuote();
+                StockQuote quote = stock!=null ? stock.getQuote() : null;
 
-                if (quote.getPrice() == null) {
+                if (stock == null || quote.getPrice() == null) {
                     System.out.println("getQuotes - quote " + symbol + " does not exist");
                     continue;
                 }
@@ -173,8 +173,7 @@ public final class QuoteSyncJob {
             JobInfo.Builder builder = new JobInfo.Builder(ONE_OFF_ID, new ComponentName(context, QuoteJobService.class));
 
 
-            builder.setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
-                    .setBackoffCriteria(INITIAL_BACKOFF, JobInfo.BACKOFF_POLICY_EXPONENTIAL);
+            builder.setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY).setBackoffCriteria(INITIAL_BACKOFF, JobInfo.BACKOFF_POLICY_EXPONENTIAL);
 
 
             JobScheduler scheduler = (JobScheduler) context.getSystemService(Context.JOB_SCHEDULER_SERVICE);
