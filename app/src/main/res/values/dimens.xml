@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="list_icon">40dp</dimen>
+    <dimen name="stock_widget_text_size">16dp</dimen>
+
+    <dimen name="widget_detail_default_width">250dp</dimen>
+    <dimen name="widget_detail_default_height">180dp</dimen>
+    <dimen name="widget_detail_min_resize_width">220dp</dimen>
+    <dimen name="widget_detail_min_resize_height">@dimen/widget_detail_default_height</dimen>
+    <dimen name="detail_widget_text_width">58dp</dimen>
+    <dimen name="stock_text_width">49dp</dimen>
+    <dimen name="stock_text_space">8dp</dimen>
+</resources>

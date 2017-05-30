@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Stock Hawk - Udacity</string>
+
+    <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
+    <string name="pref_stocks_key" translatable="false">stocks</string>
+    <string name="pref_display_mode_key" translatable="false">displayMode</string>
+    <string name="pref_display_mode_default" translatable="false">@string/pref_display_mode_percentage_key</string>
+    <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>
+    <string name="pref_display_mode_percentage_key" translatable="false">percentage</string>
+
+    <string name="default_stocks_yahoo" translatable="false">YHOO</string>
+    <string name="default_stocks_apple" translatable="false">AAPL</string>
+    <string name="default_stocks_facebook" translatable="false">FB</string>
+
+    <string name="action_change_units" translatable="false">@string/pref_display_mode_key</string>
+    <string name="history_chart_description" translatable="true">Chart of stock price history</string>
+    <string name="error" translatable="true">Error message</string>
+    <string name="stock_price" translatable="true">Stock price</string>
+    <string name="stock_change" translatable="true">Stock recent change</string>
+    <string name="stock_history" translatable="true">Stock history</string>
+    <string name="stock_doesnot_exist" translatable="true">Given stock symbol does not exist!</string>
+
+    <string name="dialog_title" translatable="true">Add Stock</string>
+    <string name="dialog_hint" translatable="true">Symbol (e.g. GOOG)</string>
+    <string name="dialog_cancel" translatable="true">Cancel</string>
+    <string name="dialog_add" translatable="true">Add</string>
+    <string name="dialog_addbutton_description" translatable="true">Add a stock symbol</string>
+
+    <string name="error_no_network" translatable="true">No network connectivity! Will load stock cursor when the network is available.</string>
+    <string name="error_no_stocks" translatable="true">No stocks added! Hit the floating action button to add one.</string>
+
+    <string name="toast_stock_added_no_connectivity" translatable="true">Symbol %s added. Will refresh when network available.</string>
+    <string name="toast_no_connectivity" translatable="true">Will refresh when network available.</string>
+
+    <string name="title_widget_today" translatable="true">Today´s stocks</string>
+    <string name="widget_list_description" translatable="true">List of stocks</string>
+    <string name="widget_nodata" translatable="true">no data available</string>
+    <string name="widget_nosymbol" translatable="true">no symbol</string>
+    <string name="widget_noprice" translatable="true">no price</string>
+    <string name="widget_nochangedata" translatable="true">no change data</string>
+
+</resources>
